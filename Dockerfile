@@ -11,6 +11,7 @@ EXPOSE 25565
 
 WORKDIR /opt/paper/
 ADD https://api.papermc.io/v2/projects/paper/versions/1.19.2/builds/307/downloads/paper-1.19.2-307.jar paper.jar
+ADD eula.txt eula.txt
 
 RUN apk --update add --no-cache ca-certificates
 
