@@ -1,0 +1,11 @@
+version: "3"
+services:
+  paperimage:
+    container_name: "paper"
+    image: ghcr.io/l3nnartt/paperimage:main
+    restart: always
+    ports:
+      - "25565:25565"
+    volumes:
+      - ./plugins/:/opt/paper/plugins/
+      - ./server.properties:/opt/paper/server.properties
