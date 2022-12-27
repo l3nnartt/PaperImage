@@ -5,10 +5,14 @@ services:
     image: ghcr.io/l3nnartt/paperimage:main
     restart: always
     ports:
-      - "25565:25565"
+      - "25567:25567"
     volumes:
       - ./plugins/:/opt/paper/plugins/
       - ./world/:/opt/paper/world/
-      - ./world_the_nether/:/opt/paper/world_the_nether/
+      - ./world_nether/:/opt/paper/world_nether/
       - ./world_the_end/:/opt/paper/world_the_end/
       - ./server.properties:/opt/paper/server.properties
+#      - ./eula.txt:/opt/paper/eula.txt
+      - ./spigot.yml:/opt/paper/spigot.yml
+      - ./whitelist.json:/opt/paper/whitelist.json
+      - ./ops.json:/opt/paper/ops.json
