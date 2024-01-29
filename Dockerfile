@@ -5,12 +5,12 @@ LABEL org.opencontainers.image.title="PaperImage"
 LABEL org.opencontainers.image.description="Docker Image to run a papermc minecraft server"
 LABEL org.opencontainers.image.source=https://github.com/l3nnartt/paperimage
 LABEL org.opencontainers.image.authors="Lennart Lösche <contact@lennartloesche.de>"
-LABEL org.opencontainers.image.version=1.19.3-362
+LABEL org.opencontainers.image.version=1.20.1-196
 
 EXPOSE 25565
 
 WORKDIR /opt/paper/
-ADD https://api.papermc.io/v2/projects/paper/versions/1.19.4/builds/484/downloads/paper-1.19.4-484.jar paper.jar
+ADD https://api.papermc.io/v2/projects/paper/versions/1.20.1/builds/196/downloads/paper-1.20.1-196.jar
 ADD eula.txt eula.txt
 
 RUN apk --update add --no-cache ca-certificates
