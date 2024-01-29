@@ -10,7 +10,7 @@ LABEL org.opencontainers.image.version=1.20.1-196
 EXPOSE 25565
 
 WORKDIR /opt/paper/
-ADD https://api.papermc.io/v2/projects/paper/versions/1.20.1/builds/196/downloads/paper-1.20.1-196.jar
+ADD https://api.papermc.io/v2/projects/paper/versions/1.20.1/builds/196/downloads/paper-1.20.1-196.jar paper.jar
 ADD eula.txt eula.txt
 
 RUN apk --update add --no-cache ca-certificates
