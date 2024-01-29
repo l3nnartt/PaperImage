@@ -1,4 +1,4 @@
-FROM openjdk:17-alpine
+FROM eclipse-temurin:17-jdk
 
 LABEL org.opencontainers.image.vendor="ghcr.io"
 LABEL org.opencontainers.image.title="PaperImage"
